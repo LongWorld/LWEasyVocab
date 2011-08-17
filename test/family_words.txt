@@ -1,0 +1,47 @@
+grandfather|el abuelo|
+bricklayer|el albañil|
+friend|el amigo|
+animal|el animal|
+beard|la barba|
+moustache|el bigote|
+wedding|la boda/el casamiento|
+horse|el caballo|
+bald|calvo|
+waiter|el camarero|
+face|la cara|
+carpenter|el carpintero|
+postman|el cartero|
+married|casado|
+boy|el chico|
+guinea-pig|el cobayo|
+cook|el cocinero|
+shop-keeper|el comerciante|
+partner/mate|el compañero|
+rabbit|el conejo|
+dentist|el dentista|
+shop assistant|el dependiente|
+divorced|divorciado|
+employee|el empleado|
+electrician|el electricista|
+nurse|el enfermero|
+husband|el esposo/el marido|
+family|la familia|
+glasses|las gafas|
+cat|el gato|
+twin|el gemelo|
+farmer|el granjero|
+step-brother|el hermanastro|
+brother|el hermano|
+child/son|el hijo|
+man|el hombre|l'homme
+engineer|el ingeniero|
+retired|jubilado|
+contact lenses|los lentes de contacto|
+straight/smooth|liso|
+mad|loco|
+step-mother|la madrastra|
+mother|la madre|
+mum|la mamá|
+marriage/married couple|el matrimonio|
+mechanic|el mecánico|
+doctor|el médico|

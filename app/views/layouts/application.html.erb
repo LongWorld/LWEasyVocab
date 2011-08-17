@@ -1,13 +1,26 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>V01</title>
+  <title>LWEasyVocab Online</title>
   <%= stylesheet_link_tag :all %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
 <body>
-
+<% if notice.present? then %>
+  <p class="notice"><%= notice %></p>
+<% end %>
+<% if alert.present? then %>
+  <p class="alert"><%= alert %></p>
+<% end %>
+<div id="title">
+</div>
+<div id="menu">
+  <span><%= link_to "Words", words_path %></span>
+  <span><%= link_to "Phrases", phrases_path %></span>
+  <span><%= link_to "Contact Us", :controller => "contactus", :method => "index" %> </span>
+</div>
+<br />
 <%= yield %>
 
 </body>

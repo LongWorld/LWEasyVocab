@@ -1,0 +1,74 @@
+/* =================================================
+/* LWEasyVocab                                       
+/* -----------                                       
+/*
+/* Specific styling for the language application. 
+/* ================================================= */
+
+body {
+	background-color: #EEEEEE;
+	border: solid 2pt black;
+	margin-left: 50pt;
+	margin-right: 50pt;
+	padding: 5pt;
+	padding-top: 10pt;
+	padding-bottom: 10pt;
+}
+.notice
+{
+	background: green;
+	color: white;
+        padding: 6px 6px 6px 12px;
+	border: solid 5pt black;
+}
+
+.alert
+{
+	background: red;
+	color: white;
+	font-weight: bold;
+        padding: 6px 6px 6px 12px;
+	border: solid 5pt black;
+}
+
+#menu span
+{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    float: left;
+    margin-right: 0.5em;
+}
+
+#menu a
+{
+    display: block;
+    width: 8em;
+    color: white;
+    background-color: #000099;
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu a:hover
+{
+    background-color: #6666AA;
+}
+
+table, h1 {
+	background-color: #DDDDDD;
+	width: 85%;
+	border: 1px;
+	padding: 0px;
+	margin: 20px;
+}
+
+h1 {
+	background-color: #DDDDDD;
+	height: 25px;
+	padding-top: 5px;
+}
+
+td {
+	border: 1px;
+}

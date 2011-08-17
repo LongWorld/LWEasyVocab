@@ -9,10 +9,10 @@ development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: v01_development
+  database: lweasyvocab_development
   pool: 5
   username: root
-  password:
+  password: paul123
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -22,7 +22,7 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: v01_test
+  database: lweasyvocab _test
   pool: 5
   username: root
   password:
