@@ -6,7 +6,11 @@ class Phrase < ActiveRecord::Base
   has_many :componentisations 
   
   def self.search(search)
-    Phrase.where('text LIKE ?', "%#{search}%")
+    if search
+      where('text LIKE ?', "%#{search}%")
+    else
+      scoped
+    end
   end
 
   def self.add(str, language)

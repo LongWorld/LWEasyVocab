@@ -7,7 +7,12 @@
 
 <p>
   <b>Category:</b>
-  <%= @word.category.name %>
+  <%= if @word.category
+        @word.category.name
+  else
+    'Undefined'
+  end
+    %>
 </p>
 
 <p>

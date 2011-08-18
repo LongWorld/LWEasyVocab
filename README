@@ -1,5 +1,10 @@
 == Welcome to LWEasyVocab
 
+Okay, to get started we have some test data that can be used. It can be found
+in /test/family_words.txt. In order to load this file call the rake command:
+
+$ rake load_vocab
+
 == Welcome to Rails
 
 Rails is a web-application framework that includes everything needed to create

@@ -8,22 +8,25 @@
 <% end %>
 <table>
   <tr>
-    <th>Text</th>
-    <th>Category</th>
-    <th>Language</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    <th width="40%" align="left">Text</th>
+    <th width="10%" align="center">Category</th>
+    <th width="10%" align="center">Language</th>
+    <th width="40%" colspan="2">Operations</th>
   </tr>
 
 <% @words.each do |word| %>
   <tr>
-    <td><%= word.text %></td>
-    <td><%= word.category %></td>
-    <td><%= word.language.abbreviation %></td>
-    <td><%= link_to 'Show', word %></td>
-    <td><%= link_to 'Edit', edit_word_path(word) %></td>
-    <td><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%= link_to word.text, word %></td>
+    <td align="center"><%=
+if (word.category)
+  word.category.name
+else
+  '-'
+end
+    %></td>
+    <td align="center"><%= word.language.abbreviation %></td>
+    <td align="center"><%= link_to 'Edit', edit_word_path(word) %></td>
+    <td align="center"><%= link_to 'Destroy', word, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>

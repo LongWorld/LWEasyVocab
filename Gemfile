@@ -8,6 +8,7 @@ gem 'rails', '3.0.6'
 gem 'mysql2'
 #gem 'will_paginate', '3.0.pre2'
 gem 'kaminari'
+gem 'jquery-rails'
 
 # Use unicorn as the web server
 # gem 'unicorn'

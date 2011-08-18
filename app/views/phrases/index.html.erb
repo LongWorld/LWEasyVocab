@@ -6,26 +6,9 @@
   <%= submit_tag "Search", :name => nil %>
 </p>
 <% end %>
-<% if !@phrases.blank? %>
-<table>
-  <tr>
-    <th>Phrase</th>
-    <th>Language</th>
-    <th colspan="3">Operations</th>
-  </tr>
-<% @phrases.each do |phrase| %>
-  <tr>  
-    <td><%= phrase.text %></td>
-    <td><%= phrase.language.abbreviation %></td>
-    <td><%= link_to 'Show', phrase %></td>
-    <td><%= link_to 'Edit', edit_phrase_path(phrase) %></td>
-    <td><%= link_to 'Destroy', phrase, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-<% end %>
-<br />
-<%= paginate @phrases %>
-<br />
+
+<div id="phrases">
+<%= render 'phrases' %>
+</div>
 
 <%= link_to 'New Phrase', new_phrase_path %>

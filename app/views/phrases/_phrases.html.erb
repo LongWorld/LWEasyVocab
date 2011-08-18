@@ -1,0 +1,18 @@
+<table border="1">
+  <tr>
+    <th align="left">Phrase</th>
+    <th align="center">Language</th>
+    <th colspan="2">Operations</th>
+  </tr>
+<% @phrases.each do |phrase| %>
+  <tr>  
+    <td><%= link_to phrase.text, phrase %></td>
+    <td align="center"><%= phrase.language.abbreviation %></td>
+    <td align="center"><%= link_to 'Edit', edit_phrase_path(phrase) %></td>
+    <td align="center"><%= link_to 'Destroy', phrase, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+<%= paginate @phrases %>
+<br />
