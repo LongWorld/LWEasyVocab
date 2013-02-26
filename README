@@ -1,9 +1,17 @@
 == Welcome to LWEasyVocab
 
 Okay, to get started we have some test data that can be used. It can be found
-in /test/family_words.txt. In order to load this file call the rake command:
+in ~/test/family_words.txt. In order to load this file call the following rake commands:
 
-$ rake load_vocab
+$ bundle install
+$ bundle exec rake db:create
+$ bundle exec rake db:migrate
+$ bundle exec rake db:seed
+$ bundle exec rake load_vocab
+
+Using 'bundle exec' will use the version of rake in the Gemfile, not the current installed system version.
+Create the database (db:create), create the database tables (db:migrate) and then populate the database (db:seed)
+so that the 'load_vocab' rake task can work.
 
 == Welcome to Rails
 
