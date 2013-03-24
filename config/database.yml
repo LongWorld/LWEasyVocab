@@ -22,10 +22,10 @@ test:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: lweasyvocab _test
+  database: lweasyvocab_test
   pool: 5
   username: root
-  password:
+  password: paul123
   host: localhost
 
 production:
@@ -35,5 +35,5 @@ production:
   database: v01_production
   pool: 5
   username: root
-  password:
+  password: paul123
   host: localhost
